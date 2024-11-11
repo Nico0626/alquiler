@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Departamentos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Catálogo de Departamentos</h1>
+    <div id="catalogo"></div>
+    
+    <div id="formularioReserva">
+        <h2>Reservar Departamento</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono">
+
+        <label for="fechaIngreso">Fecha de Ingreso:</label>
+        <input type="date" id="fechaIngreso">
+
+        <label for="fechaEgreso">Fecha de Egreso:</label>
+        <input type="date" id="fechaEgreso">
+        
+        <button onclick="realizarReserva()">Reservar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

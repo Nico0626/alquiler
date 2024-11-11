@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+}
+#formularioReserva {
+    margin-top: 20px;
+}

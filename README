@@ -1,0 +1,19 @@
+Front-End
+HTML (index.html): Es la interfaz principal donde los usuarios pueden ver el catálogo de departamentos y rellenar el formulario de reserva.
+CSS (estilos.css): Estilos básicos para la apariencia de la página.
+JavaScript (script.js): Código del lado del cliente para cargar el catálogo y enviar las solicitudes de reserva al servidor.
+Back-End
+db_config.php: Configuración de la conexión a la base de datos.
+consulta_reservas.php: Recupera los departamentos del catálogo y los envía en formato JSON al front-end.
+reserva.php: Maneja la lógica de la reserva:
+Verifica la disponibilidad de fechas en la base de datos.
+Guarda la reserva si las fechas están disponibles.
+Genera un PDF de confirmación usando FPDF.
+Envía un correo electrónico al cliente con el PDF adjunto usando PHPMailer.
+Librerías Externas (en vendor/)
+FPDF: Para la creación de PDF de confirmación de la reserva.
+PHPMailer: Para enviar el PDF de confirmación al correo del cliente.
+Con esta estructura, tienes una aplicación funcional para gestionar reservas. Asegúrate de que:
+
+La base de datos esté configurada correctamente.
+Los detalles del servidor SMTP estén configurados para enviar correos.
